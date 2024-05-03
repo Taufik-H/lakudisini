@@ -12,7 +12,12 @@ const unbounded = Unbounded({
 const Marque = () => {
   return (
     <>
-      <div className={cn(unbounded.className, `my-20 bg-blue-700 py-10`)}>
+      <div
+        className={cn(
+          unbounded.className,
+          `my-20 mt-32 bg-blue-700 py-10 lg:mt-0`,
+        )}
+      >
         <Marquee autoFill={true}>
           <MarqueeItem />
         </Marquee>
