@@ -6,14 +6,23 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 import { Sling as Hamburger } from "hamburger-react";
 import { useState } from "react";
-import { AnimatePresence } from "framer-motion";
+import {
+  AnimatePresence,
+  motion,
+  useScroll,
+  useMotionValueEvent,
+} from "framer-motion";
 import MobileNav from "./mobile-nav";
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
+  const { scrollYProgress } = useScroll();
+  const [visible, setVisible] = useState(false);
+
+  useMotionValueEvent(scrollYProgress, "change", (current) => {});
   return (
     <>
-      <nav className="padding-container fixed top-0 z-20  w-full pt-4">
+      <motion.nav className="padding-container fixed top-0 z-20  w-full   pt-4 backdrop-blur-[2px]">
         <div className="max-container  flex w-full justify-between">
           <Image
             src={"/images/logo.png"}
@@ -52,7 +61,7 @@ const Navbar = () => {
             {isOpen && <MobileNav />}
           </AnimatePresence>
         </div>
-      </nav>
+      </motion.nav>
     </>
   );
 };
