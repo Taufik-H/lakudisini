@@ -2,13 +2,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { menuSlide, slide } from "@/constant/anim";
-import { NAVBAR, NAVBAR_MOBIE } from "@/constant";
+import { NAVBAR_MOBIE } from "@/constant";
 import Link from "next/link";
 import Curve from "../curve";
 const MobileNav = () => {
-  const data = NAVBAR.map((_, index) => {
-    return index;
-  });
   return (
     <motion.div
       variants={menuSlide}

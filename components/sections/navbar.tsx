@@ -5,7 +5,7 @@ import { NAVBAR } from "@/constant";
 import Link from "next/link";
 import { Button } from "../ui/button";
 import { Sling as Hamburger } from "hamburger-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   AnimatePresence,
   motion,
@@ -16,13 +16,22 @@ import MobileNav from "./mobile-nav";
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
-  const { scrollYProgress } = useScroll();
-  const [visible, setVisible] = useState(false);
+  const { scrollY } = useScroll();
+  const [isScroll, setIsScroll] = useState(false);
 
-  useMotionValueEvent(scrollYProgress, "change", (current) => {});
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    if (latest) {
+      setIsScroll(true);
+    } else {
+      setIsScroll(false);
+    }
+  });
   return (
     <>
-      <motion.nav className="padding-container fixed top-0 z-20  w-full   pt-4 backdrop-blur-[2px]">
+      <motion.nav
+        transition={{ duration: 0.35, ease: "easeInOut" }}
+        className={`padding-container fixed top-0 z-20  w-full   pt-4 ${isScroll ? "border-b border-input   bg-gradient-to-t from-transparent to-background  pb-3 backdrop-blur-3xl  transition-all duration-500 ease-in-out" : ""} `}
+      >
         <div className="max-container  flex w-full justify-between">
           <Image
             src={"/images/logo.png"}
