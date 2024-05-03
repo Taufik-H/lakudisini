@@ -1,0 +1,33 @@
+<svg width="821" height="832" viewBox="0 0 821 832" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_41_662" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="821" height="832">
+<rect width="821" height="832" fill="url(#paint0_linear_41_662)"/>
+</mask>
+<g mask="url(#mask0_41_662)">
+<path d="M430 0V832" stroke="#BFDBFE"/>
+<path d="M508.5 0V832" stroke="#BFDBFE"/>
+<path d="M39.5 0V832" stroke="#BFDBFE"/>
+<path d="M586.5 0V832" stroke="#BFDBFE"/>
+<path d="M117.5 0V832" stroke="#BFDBFE"/>
+<path d="M664.5 0V832" stroke="#BFDBFE"/>
+<path d="M195.5 0V832" stroke="#BFDBFE"/>
+<path d="M742.5 0V832" stroke="#BFDBFE"/>
+<path d="M273.5 0V832" stroke="#BFDBFE"/>
+<path d="M351.5 0V832" stroke="#BFDBFE"/>
+<path d="M821 455.016L0 455.016" stroke="#BFDBFE"/>
+<path d="M821 534.568L0 534.568" stroke="#BFDBFE"/>
+<path d="M821 59.2839L0 59.2838" stroke="#BFDBFE"/>
+<path d="M821 613.613L0 613.613" stroke="#BFDBFE"/>
+<path d="M821 138.329L0 138.329" stroke="#BFDBFE"/>
+<path d="M821 692.658L0 692.658" stroke="#BFDBFE"/>
+<path d="M821 217.374L0 217.374" stroke="#BFDBFE"/>
+<path d="M821 771.703L0 771.703" stroke="#BFDBFE"/>
+<path d="M821 296.419L0 296.419" stroke="#BFDBFE"/>
+<path d="M821 375.464L0 375.464" stroke="#BFDBFE"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_41_662" x1="335" y1="360" x2="13" y2="402" gradientUnits="userSpaceOnUse">
+<stop stop-color="#D9D9D9"/>
+<stop offset="0.950571" stop-color="#737373" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
