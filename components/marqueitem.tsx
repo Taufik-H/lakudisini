@@ -13,7 +13,7 @@ const MarqueeItem = () => {
           objectFit="contain"
           className=" object-contain "
         />
-        <p>lakudisini</p>
+        <p className="text-white">lakudisini</p>
       </div>
     </div>
   );
