@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { menuSlide, slide } from "@/constant/anim";
 import { NAVBAR, NAVBAR_MOBIE } from "@/constant";
 import Link from "next/link";
+import Curve from "../curve";
 const MobileNav = () => {
   const data = NAVBAR.map((_, index) => {
     return index;
@@ -16,6 +17,7 @@ const MobileNav = () => {
       initial="initial"
       className=" float-end  flex h-screen w-1/2 flex-col items-start gap-5 bg-blue-700 p-5 pt-20"
     >
+      <Curve />
       <p className="w-full border-b-2 border-blue-100 text-[10px] font-bold uppercase leading-[20px] text-white ">
         navigasi
       </p>

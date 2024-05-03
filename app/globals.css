@@ -83,3 +83,7 @@
 .padding-container {
   @apply px-6 md:px-10 xl:px-14;
 }
+
+.svgCurve {
+  @apply absolute left-[-99px] top-0 h-[100%] w-[100px] fill-blue-700 stroke-none;
+}
