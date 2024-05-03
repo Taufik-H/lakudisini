@@ -45,7 +45,7 @@ const Hero = () => {
             height={732}
             width={721}
             alt="pattern background"
-            className="absolute right-0 top-0   -z-10 dark:opacity-10 "
+            className="absolute top-[-550px] -z-10 dark:opacity-10   lg:right-0 lg:top-0 "
           />
           <div className="relative">
             <Image
@@ -53,7 +53,7 @@ const Hero = () => {
               height={477}
               width={358}
               alt="hero image"
-              className=""
+              className="object-cover"
             />
             <Image
               src={"/images/logohero.png"}
