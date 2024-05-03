@@ -45,7 +45,7 @@ const Hero = () => {
             height={732}
             width={721}
             alt="pattern background"
-            className="absolute top-[-550px] -z-10 dark:opacity-10   lg:right-0 lg:top-0 "
+            className="absolute top-[-550px] -z-10     dark:opacity-10 lg:right-0 lg:top-0 "
           />
           <div className="relative">
             <Image
@@ -60,7 +60,7 @@ const Hero = () => {
               height={150}
               width={150}
               alt="hero image"
-              className="animate-spin-slow absolute  left-[120px] top-[-50px] w-28 rounded-full border-8 border-white dark:border-background lg:left-[-70px] lg:top-[50px] lg:w-auto"
+              className="animate-spin-slow absolute  left-[120px] top-[-50px] w-28 rounded-full border-8 border-white dark:border-background lg:left-[-70px] lg:top-[50px] lg:w-[150px]"
             />
             <div className="absolute bottom-[-30px] right-[70px]  lg:right-[-30px]">
               <BorderAnimate
