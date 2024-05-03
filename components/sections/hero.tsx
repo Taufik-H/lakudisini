@@ -10,7 +10,7 @@ const Hero = () => {
     <div className="max-container ">
       <div className=" mt-20 flex h-screen w-full flex-col justify-between gap-20 lg:my-auto lg:mt-0 lg:flex-row  lg:gap-0">
         <div className="padding-container flex w-full flex-col items-center  justify-center gap-2 lg:items-start">
-          <div className="mt-10 flex items-center justify-center gap-3 rounded-full bg-blue-100 px-3 py-2 text-sm font-medium text-blue-700 dark:border-l dark:border-t dark:border-slate-500 dark:bg-blue-100 dark:bg-opacity-20 dark:text-white lg:justify-start">
+          <div className="mt-10 flex items-center justify-center gap-3 rounded-full bg-blue-100 px-3 py-2 text-sm font-medium text-blue-700 backdrop-blur-sm dark:border-l dark:border-t dark:border-slate-500 dark:bg-blue-100 dark:bg-opacity-20 dark:text-white lg:justify-start">
             <p>Lakudisini yang penting laku</p>
             <ShoppingBag size={20} />
           </div>
