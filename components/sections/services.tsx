@@ -27,7 +27,6 @@ const Services = () => {
             icon={<ShoppingBag size={60} />}
           />
           <CardServices
-            isCenter={true}
             title="Full Live 24 Jam"
             description="Kami menyediakan layanan full live 24 jam untuk memberikan dukungan dan bantuan sepanjang waktu kepada pelanggan kami."
             icon={<MonitorPlay size={60} />}

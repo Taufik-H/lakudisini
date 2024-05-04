@@ -1,7 +1,6 @@
 import React from "react";
 import { Card } from "./ui/card";
 import Image from "next/image";
-import { cn } from "@/lib/utils";
 
 type CardServicesProps = {
   title: string;
@@ -18,7 +17,7 @@ const CardServices = ({
 }: CardServicesProps) => {
   return (
     <Card
-      className={`${isCenter ? "from-[#0F2972] to-[#1D4ED8] lg:bg-gradient-to-tr" : " from-[#0F2972] to-[#1D4ED8] hover:bg-gradient-to-tr"} group flex cursor-pointer items-center rounded-3xl border border-slate-300 p-10 shadow transition-all duration-300 ease-in-out  dark:border-slate-800 lg:min-h-[499px] lg:min-w-[387px]  `}
+      className={`${isCenter ? "from-[#0F2972] to-[#1D4ED8] hover:bg-gradient-to-tr lg:bg-gradient-to-tr " : " from-[#0F2972] to-[#1D4ED8] hover:bg-gradient-to-tr"} group flex cursor-pointer items-center rounded-3xl border border-slate-300 p-10 shadow transition-all duration-300 ease-in-out  dark:border-slate-800 lg:min-h-[499px]   `}
     >
       <div className="mt-20  flex flex-col items-center justify-start   ">
         <div
