@@ -11,13 +11,15 @@ const Services = () => {
           Layanan Kami
         </Badge>
 
-        <h2 className="text-center text-6xl font-bold">
+        <h2 className="text-center text-3xl font-black capitalize  lg:text-[48px]">
           <span>Yang</span>
           <span className="mx-2 bg-gradient-to-tr from-blue-700 to-cyan-300 bg-clip-text text-transparent">
             Lakudisini
           </span>
         </h2>
-        <h2 className="text-center text-6xl font-bold">Tawarkan</h2>
+        <h2 className="text-center text-3xl font-black capitalize  lg:text-[48px]">
+          Tawarkan
+        </h2>
         {/* card */}
         <div className="my-10 grid gap-5 md:grid-cols-3">
           <CardServices
