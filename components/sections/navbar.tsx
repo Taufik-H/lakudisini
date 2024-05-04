@@ -18,17 +18,29 @@ const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
   const { scrollY } = useScroll();
   const [isScroll, setIsScroll] = useState(false);
+  const [hidden, setHidden] = useState(false);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    if (latest) {
-      setIsScroll(true);
+    const previous = scrollY.getPrevious() as number;
+    if (latest > previous && latest > 80) {
+      setHidden(true);
     } else {
-      setIsScroll(false);
+      if (latest) {
+        setIsScroll(true);
+      } else {
+        setIsScroll(false);
+      }
+      setHidden(false);
     }
   });
   return (
     <>
       <motion.nav
+        variants={{
+          visible: { y: 0 },
+          hidden: { y: "-100%" },
+        }}
+        animate={hidden ? "hidden" : "visible"}
         transition={{ duration: 0.35, ease: "easeInOut" }}
         className={`padding-container fixed top-0 z-20  w-full   pt-4 ${isScroll ? "border-b border-input   bg-gradient-to-t from-transparent to-background  pb-3 backdrop-blur-3xl  transition-all duration-500 ease-in-out" : ""} `}
       >

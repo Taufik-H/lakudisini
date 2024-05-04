@@ -4,6 +4,7 @@ import { Badge } from "../ui/badge";
 import SectionTitle from "../section-title";
 import { Button } from "../ui/button";
 import { ChevronRight } from "lucide-react";
+import SectionBadge from "../section-badge";
 
 const TentangKami = () => {
   return (
@@ -20,9 +21,7 @@ const TentangKami = () => {
         </div>
 
         <div className="my-10 flex w-full flex-col items-center justify-center gap-3 lg:my-0 lg:items-start lg:justify-start ">
-          <Badge variant={"lakudisini"} className="mb-5 w-fit">
-            tentang kami
-          </Badge>
+          <SectionBadge text="Tentang Kami" />
           <SectionTitle>
             Kenalan Dengan
             <span className="ml-2 bg-gradient-to-tr from-blue-700 to-cyan-300 bg-clip-text text-transparent">

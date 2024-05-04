@@ -2,14 +2,13 @@ import React from "react";
 import { Badge } from "../ui/badge";
 import CardServices from "../card-service";
 import { MonitorPlay, ShoppingBag, Zap } from "lucide-react";
+import SectionBadge from "../section-badge";
 
 const Services = () => {
   return (
     <div className="max-container padding-container">
       <div className="mt-5 flex  w-full flex-col  items-center justify-center">
-        <Badge variant={"lakudisini"} className="mb-5 w-fit ">
-          Layanan Kami
-        </Badge>
+        <SectionBadge text="Layanan Kami" />
 
         <h2 className="text-center text-3xl font-black capitalize  lg:text-[48px]">
           <span>Yang</span>
