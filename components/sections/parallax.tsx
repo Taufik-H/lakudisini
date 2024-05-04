@@ -1,8 +1,9 @@
 "use client";
 import Image from "next/image";
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { useTransform, useScroll, motion } from "framer-motion";
 import useDimention from "@/lib/useDimention";
+import Lenis from "lenis";
 const images = [
   "1.jpg",
   "2.jpg",
@@ -16,6 +17,16 @@ const images = [
 ];
 const Parallax = () => {
   const container = useRef(null);
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    function raf(time: any) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  }, []);
   const { height } = useDimention();
   const { scrollYProgress } = useScroll({
     target: container,
