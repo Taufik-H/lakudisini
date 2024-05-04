@@ -1,3 +1,4 @@
+import Contact from "@/components/sections/contact";
 import Divider from "@/components/sections/divider";
 import Hero from "@/components/sections/hero";
 import Komitmen from "@/components/sections/komitmen";
@@ -16,6 +17,7 @@ export default function Home() {
       <Services />
       <Komitmen />
       <Parallax />
+      <Contact />
       <div className="flex h-screen flex-col items-center justify-center">
         <h1 className="text-center text-4xl font-bold">DEVELOPING</h1>
         <p className="mt-5 text-center">
