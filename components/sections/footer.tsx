@@ -31,9 +31,9 @@ const Footer = () => {
               </Link>
             ))}
           </div>
-          <Card className=" mt-3  flex flex-col justify-end gap-3 border-t border-none bg-transparent lg:flex-row">
+          <Card className=" mt-3  flex flex-col justify-center gap-3 border-t border-none bg-transparent lg:flex-row lg:justify-end">
             <Map />
-            <p className="text-sm">
+            <p className="text-center text-sm lg:text-left">
               Perum permata karsen kaf 36 Karang sentul 5/1 Padamara 53372
               Purbalingga
             </p>
