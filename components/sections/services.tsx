@@ -17,11 +17,11 @@ const Services = () => {
             Lakudisini
           </span>
         </h2>
-        <h2 className="text-center text-3xl font-black capitalize  lg:text-[48px]">
+        <h2 className="mt-3 text-center text-3xl font-black capitalize lg:text-[48px]">
           Tawarkan
         </h2>
         {/* card */}
-        <div className="my-10 grid gap-5 md:grid-cols-3">
+        <div className="my-10 grid  gap-5 md:grid-cols-2 lg:grid-cols-3">
           <CardServices
             title="Optimasi Marketplace"
             description="Kami menawarkan layanan optimasi MP yang komprehensif untuk meningkatkan  visibilitas dan penjualan produk Anda di berbagai platform online."

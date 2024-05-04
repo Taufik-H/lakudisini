@@ -15,6 +15,7 @@ const TentangKami = () => {
             width={351}
             height={484}
             alt="about lakudisini"
+            className="mx-auto lg:mx-0"
           />
         </div>
 
