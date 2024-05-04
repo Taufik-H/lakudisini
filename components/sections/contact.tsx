@@ -17,11 +17,11 @@ const Contact = () => {
         <div className="z-10 flex flex-col items-center justify-center text-center">
           <SectionBadge text="Hubungi Kami" />
           <SectionTitle>
-            <div className=" text-center leading-normal">
+            <div className=" text-center leading-normal text-white">
               Hubungi kami untuk pertanyaan lain atau kolaborasi
             </div>
           </SectionTitle>
-          <p>
+          <p className="text-white">
             Silahkan hubungi kami melalui{" "}
             <span className="font-bold">WhatsApp</span>{" "}
           </p>
