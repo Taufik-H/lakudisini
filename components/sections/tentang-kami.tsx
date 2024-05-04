@@ -19,10 +19,15 @@ const TentangKami = () => {
         </div>
 
         <div className="my-10 flex w-full flex-col items-center justify-center gap-3 lg:my-0 lg:items-start lg:justify-start ">
-          <Badge variant={"lakudisini"} className="w-fit">
+          <Badge variant={"lakudisini"} className="mb-5 w-fit">
             tentang kami
           </Badge>
-          <SectionTitle title="Kenalan Dengan" gradientText="Lakudisini" />
+          <SectionTitle>
+            Kenalan Dengan
+            <span className="ml-2 bg-gradient-to-tr from-blue-700 to-cyan-300 bg-clip-text text-transparent">
+              Lakudisini
+            </span>
+          </SectionTitle>
           <p className=" text-center text-slate-700 dark:text-white lg:w-11/12 lg:text-justify">
             Kami adalah satu-satunya agensi yang berani memberikan jaminan pasti
             laku untuk produk Anda. Di LakuDisini, kami memahami betapa
