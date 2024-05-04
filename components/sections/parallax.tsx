@@ -46,7 +46,7 @@ const Column = ({ images, y = 0 }: { images: any; y?: any }) => {
     <motion.div style={{ y }} className="column">
       {images.map((src: string, index: number) => {
         return (
-          <div className="imageContainer">
+          <div key={index} className="imageContainer">
             <Image
               key={index}
               src={`/images/${src}`}
