@@ -16,7 +16,7 @@ const KomitmenItem = ({
         <Button variant={"gradient"} className="rounded-xl">
           {number}
         </Button>
-        <p className="font-bold">{komitmen}</p>
+        <p className="font-black">{komitmen}</p>
       </div>
       <div className="ml-[53px] text-sm lg:ml-0 lg:w-5/12">{description}</div>
     </div>
