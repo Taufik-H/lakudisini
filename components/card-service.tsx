@@ -18,16 +18,16 @@ const CardServices = ({
 }: CardServicesProps) => {
   return (
     <Card
-      className={`${isCenter ? "bg-gradient-to-tr from-[#0F2972] to-[#1D4ED8]" : " from-[#0F2972] to-[#1D4ED8] hover:bg-gradient-to-tr"} group flex min-h-[499px] min-w-[387px] cursor-pointer items-center rounded-3xl border border-slate-300 p-10 shadow transition-all  duration-300 ease-in-out dark:border-slate-800  `}
+      className={`${isCenter ? "from-[#0F2972] to-[#1D4ED8] md:bg-gradient-to-tr" : " from-[#0F2972] to-[#1D4ED8] hover:bg-gradient-to-tr"} group flex min-h-[499px] min-w-[387px] cursor-pointer items-center rounded-3xl border border-slate-300 p-10 shadow transition-all  duration-300 ease-in-out dark:border-slate-800  `}
     >
       <div className="mt-20  flex flex-col items-center justify-start   ">
         <div
-          className={`flex h-[138px] w-[138px] items-center justify-center rounded-full bg-blue-700 text-white transition-all duration-300 ease-in-out   ${isCenter ? "bg-blue-100 text-blue-700" : "group-hover:bg-blue-100 group-hover:text-blue-700"}`}
+          className={`flex h-[138px] w-[138px] items-center justify-center rounded-full bg-blue-700 text-white transition-all duration-300 ease-in-out   ${isCenter ? "md:bg-blue-100 md:text-blue-700" : "group-hover:bg-blue-100 group-hover:text-blue-700"}`}
         >
           {icon}
         </div>
         <div
-          className={`${isCenter ? "text-white" : "group-hover:text-white"} mt-32 transition-all duration-300 ease-in-out`}
+          className={`${isCenter ? "md:text-white" : "group-hover:text-white"} mt-32 transition-all duration-300 ease-in-out`}
         >
           <div className="flex justify-center gap-3">
             <h3 className="text-lg font-bold capitalize">{title}</h3>
