@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { menuSlide, slide } from "@/constant/anim";
-import { NAVBAR_MOBIE } from "@/constant";
+import { NAVBAR } from "@/constant";
 import Link from "next/link";
 import Curve from "../curve";
 const MobileNav = () => {
@@ -18,7 +18,7 @@ const MobileNav = () => {
       <p className="w-full border-b-2 border-blue-100 text-[10px] font-bold uppercase leading-[20px] text-white ">
         navigasi
       </p>
-      {NAVBAR_MOBIE.map((item, index) => (
+      {NAVBAR.map((item, index) => (
         <motion.div
           custom={index}
           variants={slide}
