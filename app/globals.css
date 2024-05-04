@@ -89,7 +89,7 @@
 }
 
 .gallery {
-  @apply box-border flex h-[175vh]  flex-row gap-[1vw] overflow-hidden bg-blue-700 p-[1vw];
+  @apply box-border flex h-[175vh] flex-row justify-center gap-[1vw] overflow-hidden bg-blue-700 md:p-[1vw];
 }
 
 .column {
@@ -97,7 +97,7 @@
 }
 
 .imageContainer {
-  @apply relative h-[100%] w-[100%] overflow-hidden rounded-[1vw];
+  @apply relative h-[100%] w-[100%] overflow-hidden rounded-[2vw];
 }
 
 .column:nth-of-type(1) {
