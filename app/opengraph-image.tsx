@@ -20,7 +20,9 @@ export default async function Image() {
   return new ImageResponse(
     (
       // ImageResponse JSX element
-      <div className="">Hello og</div>
+      <div className="items-center justify-center bg-blue-700 text-3xl font-black text-white ">
+        LakuDisini
+      </div>
     ),
     // ImageResponse options
     {
