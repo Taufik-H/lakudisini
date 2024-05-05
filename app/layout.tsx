@@ -14,7 +14,7 @@ export const metadata: Metadata = {
       "Agency yang menyediakan jasa membantu penjualan dengan tujuan menaikan dari omset patner",
     url: "https://lakudisini.com",
     siteName: "LakuDisini",
-    locale: "Id",
+    locale: "ID",
     type: "website",
   },
 };
