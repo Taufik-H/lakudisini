@@ -14,19 +14,6 @@ export const metadata: Metadata = {
       "Agency yang menyediakan jasa membantu penjualan dengan tujuan menaikan dari omset patner",
     url: "https://lakudisini.com",
     siteName: "LakuDisini",
-    images: [
-      {
-        url: "/images/logohero.png",
-        width: 800,
-        height: 600,
-      },
-      {
-        url: "/images/logohero.png",
-        width: 1800,
-        height: 1600,
-        alt: "Lakudisini",
-      },
-    ],
     locale: "Id",
     type: "website",
   },
