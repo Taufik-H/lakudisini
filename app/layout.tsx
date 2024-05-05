@@ -12,22 +12,22 @@ export const metadata: Metadata = {
     title: "LakuDisini",
     description:
       "Agency yang menyediakan jasa membantu penjualan dengan tujuan menaikan dari omset patner",
-    url: "https://nextjs.org",
-    siteName: "Next.js",
+    url: "https://lakudisini.com",
+    siteName: "LakuDisini",
     images: [
       {
-        url: "https://nextjs.org/og.png",
+        url: "/images/logohero.png",
         width: 800,
         height: 600,
       },
       {
-        url: "https://nextjs.org/og-alt.png",
+        url: "/images/logohero.png",
         width: 1800,
         height: 1600,
-        alt: "My custom alt",
+        alt: "Lakudisini",
       },
     ],
-    locale: "en_US",
+    locale: "Id",
     type: "website",
   },
 };
