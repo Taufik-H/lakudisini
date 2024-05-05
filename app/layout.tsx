@@ -8,9 +8,28 @@ import Footer from "@/components/sections/footer";
 const JakartaPlus = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "LakuDisini",
-  description:
-    "Agency yang menyediakan jasa membantu penjualan dengan tujuan menaikan dari omset patner",
+  openGraph: {
+    title: "LakuDisini",
+    description:
+      "Agency yang menyediakan jasa membantu penjualan dengan tujuan menaikan dari omset patner",
+    url: "https://nextjs.org",
+    siteName: "Next.js",
+    images: [
+      {
+        url: "https://nextjs.org/og.png",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "https://nextjs.org/og-alt.png",
+        width: 1800,
+        height: 1600,
+        alt: "My custom alt",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
