@@ -8,6 +8,10 @@ import Footer from "@/components/sections/footer";
 const JakartaPlus = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  title: "LakuDisini",
+  description:
+    "Agency yang menyediakan jasa membantu penjualan dengan tujuan menaikan dari omset patner",
+  keywords: "agency, marketing, marketplace, omset",
   openGraph: {
     title: "LakuDisini",
     description:
