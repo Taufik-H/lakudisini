@@ -3,6 +3,7 @@ import SectionBadge from "../section-badge";
 import Image from "next/image";
 import SectionTitle from "../section-title";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 const Contact = ({ id }: { id: string }) => {
   return (
@@ -25,18 +26,20 @@ const Contact = ({ id }: { id: string }) => {
             Silahkan hubungi kami melalui{" "}
             <span className="font-bold">WhatsApp</span>{" "}
           </p>
-          <Button
-            size={"lg"}
-            className="mt-5 flex items-center  gap-3 rounded-xl bg-teal-500 font-bold text-white hover:bg-teal-700"
-          >
-            Whatsapp
-            <Image
-              src={"/images/wa.svg"}
-              width={20}
-              height={20}
-              alt="contact lakudisini"
-            />
-          </Button>
+          <Link href={"https://wa.me/6282327307005"} target="_blank">
+            <Button
+              size={"lg"}
+              className="mt-5 flex items-center  gap-3 rounded-xl bg-teal-500 font-bold text-white hover:bg-teal-700"
+            >
+              Whatsapp
+              <Image
+                src={"/images/wa.svg"}
+                width={20}
+                height={20}
+                alt="contact lakudisini"
+              />
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

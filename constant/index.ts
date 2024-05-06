@@ -15,10 +15,7 @@ export const NAVBAR = [
     name: "Komitmen",
     href: "/#komitmen",
   },
-  {
-    name: "FAQ",
-    href: "/#faq",
-  },
+
   {
     name: "Hubungi Kami",
     href: "/#hubungi-kami",

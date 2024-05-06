@@ -5,6 +5,7 @@ import SectionTitle from "../section-title";
 import { Button } from "../ui/button";
 import { ChevronRight } from "lucide-react";
 import SectionBadge from "../section-badge";
+import Link from "next/link";
 
 const TentangKami = ({ id }: { id: string }) => {
   return (
@@ -35,12 +36,14 @@ const TentangKami = ({ id }: { id: string }) => {
             menawarkan garansi omset tanpa biaya awal yang rumit. setelah tembus
             omset 100juta baru team LAKUDISINI meminta komitmen
           </p>
-          <Button
-            size={"lg"}
-            className="mt-5 bg-blue-700 text-white hover:bg-blue-900 lg:mt-10"
-          >
-            Komitmen Kami <ChevronRight />
-          </Button>
+          <Link href={"#komitmen"}>
+            <Button
+              size={"lg"}
+              className="mt-5 bg-blue-700 text-white hover:bg-blue-900 lg:mt-10"
+            >
+              Komitmen Kami <ChevronRight />
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

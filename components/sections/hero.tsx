@@ -22,13 +22,15 @@ const Hero = ({ id }: { id: string }) => {
           </h1>
           {/* tombol */}
           <div className="mt-10 flex items-center gap-3">
-            <Button
-              size={"lg"}
-              className=" bg-blue-700 text-white hover:bg-blue-900"
-            >
-              Layanan kami
-            </Button>
-            <Link href={"#"}>
+            <Link href={"#layanan"}>
+              <Button
+                size={"lg"}
+                className=" bg-blue-700 text-white hover:bg-blue-900"
+              >
+                Layanan kami
+              </Button>
+            </Link>
+            <Link href={"https://wa.me/6282327307005"} target="_blank">
               <Button
                 className="border-2 border-slate-900 p-2 dark:border-slate-200 dark:hover:bg-slate-900"
                 size={"lg"}

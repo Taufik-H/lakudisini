@@ -72,9 +72,11 @@ const Navbar = () => {
             >
               <Hamburger size={20} toggled={isOpen} toggle={setOpen} />
             </div>
-            <Button variant={"roundy"} className=" hidden lg:block">
-              Hubungi Kami
-            </Button>
+            <Link href={"https://wa.me/6282327307005"} target="_blank">
+              <Button variant={"roundy"} className=" hidden lg:block">
+                Hubungi Kami
+              </Button>
+            </Link>
           </div>
         </div>
         <div className="absolute right-0 top-0 z-0 w-full">
