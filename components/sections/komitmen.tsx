@@ -4,9 +4,9 @@ import SectionTitle from "../section-title";
 import KomitmenItem from "../komitmen-item";
 import { KOMITMEN } from "@/constant";
 
-const Komitmen = () => {
+const Komitmen = ({ id }: { id: string }) => {
   return (
-    <section className="max-container padding-container my-10">
+    <section id={id} className="max-container padding-container my-10">
       <div className="flex flex-col items-center lg:items-start">
         <SectionBadge text="Komitmen kami" />
         <SectionTitle>komitmen yang kami berikan</SectionTitle>

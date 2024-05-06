@@ -4,9 +4,9 @@ import CardServices from "../card-service";
 import { MonitorPlay, ShoppingBag, Zap } from "lucide-react";
 import SectionBadge from "../section-badge";
 
-const Services = () => {
+const Services = ({ id }: { id: string }) => {
   return (
-    <div className="max-container padding-container">
+    <section id={id} className="max-container padding-container">
       <div className="mt-5 flex  w-full flex-col  items-center justify-center">
         <SectionBadge text="Layanan Kami" />
 
@@ -38,7 +38,7 @@ const Services = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

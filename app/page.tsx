@@ -10,14 +10,14 @@ import TentangKami from "@/components/sections/tentang-kami";
 export default function Home() {
   return (
     <>
-      <Hero />
+      <Hero id="/" />
       <Marque />
-      <TentangKami />
+      <TentangKami id="tentang-kami" />
       <Divider />
-      <Services />
-      <Komitmen />
-      <Parallax />
-      <Contact />
+      <Services id="layanan" />
+      <Komitmen id="komitmen" />
+      <Parallax id="gallery" />
+      <Contact id="hubungi-kami" />
     </>
   );
 }

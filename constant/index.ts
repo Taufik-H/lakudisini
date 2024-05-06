@@ -5,23 +5,23 @@ export const NAVBAR = [
   },
   {
     name: "Tentang Kami",
-    href: "/tentang-kami",
+    href: "/#tentang-kami",
   },
   {
     name: "Layanan",
-    href: "/layanan",
+    href: "/#layanan",
   },
   {
     name: "Komitmen",
-    href: "/komitmen",
+    href: "/#komitmen",
   },
   {
     name: "FAQ",
-    href: "/faq",
+    href: "/#faq",
   },
   {
     name: "Hubungi Kami",
-    href: "/hubungi-kami",
+    href: "/#hubungi-kami",
   },
 ];
 

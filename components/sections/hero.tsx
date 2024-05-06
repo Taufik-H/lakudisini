@@ -5,9 +5,9 @@ import Link from "next/link";
 import { ArrowUpRight, BadgeCheck, ShoppingBag } from "lucide-react";
 import { BorderAnimate } from "../moving-border";
 
-const Hero = () => {
+const Hero = ({ id }: { id: string }) => {
   return (
-    <div className="max-container  ">
+    <section id={id} className="max-container  ">
       <div className=" my-20 flex h-screen w-full flex-col justify-between gap-20 md:h-auto lg:my-auto lg:mt-0  lg:h-screen lg:flex-row  lg:gap-0">
         <div className="padding-container flex w-full flex-col items-center  justify-center gap-2 lg:items-start">
           <div className="mt-10 flex items-center justify-center gap-3 rounded-full bg-blue-100 px-3 py-2 text-sm font-medium text-blue-700 backdrop-blur-sm dark:border-l dark:border-t dark:border-slate-500 dark:bg-blue-100 dark:bg-opacity-20 dark:text-white lg:justify-start">
@@ -60,7 +60,7 @@ const Hero = () => {
               height={150}
               width={150}
               alt="hero image"
-              className="animate-spin-slow absolute  left-[120px] top-[-50px] w-28 rounded-full border-8 border-white dark:border-background lg:left-[-70px] lg:top-[50px] lg:w-[150px]"
+              className="absolute left-[120px]  top-[-50px] w-28 animate-spin-slow rounded-full border-8 border-white dark:border-background lg:left-[-70px] lg:top-[50px] lg:w-[150px]"
             />
             <div className="absolute bottom-[-30px] right-[70px]  lg:right-[-30px]">
               <BorderAnimate
@@ -83,7 +83,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -15,7 +15,7 @@ const images = [
   "8.jpg",
   "9.jpg",
 ];
-const Parallax = () => {
+const Parallax = ({ id }: { id: string }) => {
   const container = useRef(null);
   useEffect(() => {
     const lenis = new Lenis();
@@ -39,7 +39,7 @@ const Parallax = () => {
   const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 2.1]);
 
   return (
-    <section className="">
+    <section id={id} className="">
       <div ref={container} className="gallery">
         <Column images={[[images[0]], images[1], images[2]]} y={y} />
         <Column images={[[images[3]], images[4], images[5]]} y={y2} />

@@ -6,9 +6,9 @@ import { Button } from "../ui/button";
 import { ChevronRight } from "lucide-react";
 import SectionBadge from "../section-badge";
 
-const TentangKami = () => {
+const TentangKami = ({ id }: { id: string }) => {
   return (
-    <div className="max-container padding-container">
+    <section id={id} className="max-container padding-container">
       <div className="flex w-full flex-col items-center justify-center lg:flex-row lg:justify-between  ">
         <div className="w-full">
           <Image
@@ -43,7 +43,7 @@ const TentangKami = () => {
           </Button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

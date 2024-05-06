@@ -9,6 +9,7 @@ const JakartaPlus = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "LakuDisini",
+  metadataBase: new URL("https://lakudisini.com"),
   description:
     "Agency yang menyediakan jasa membantu penjualan dengan tujuan menaikan dari omset patner",
   keywords: "agency, marketing, marketplace, omset",
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
       "Agency yang menyediakan jasa membantu penjualan dengan tujuan menaikan dari omset patner",
     url: "https://lakudisini.com",
     siteName: "LakuDisini",
+    images: "/opengraph-image.png",
     locale: "ID",
     type: "website",
   },
@@ -29,7 +31,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className="scroll-smooth"
+      style={{ scrollBehavior: "smooth" }}
+    >
       <body className={JakartaPlus.className}>
         <ThemeProvider
           attribute="class"
