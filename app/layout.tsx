@@ -4,7 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/sections/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import Footer from "@/components/sections/footer";
-
+import { Analytics } from "@vercel/analytics/react";
 const JakartaPlus = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -43,6 +43,7 @@ export default function RootLayout({
       style={{ scrollBehavior: "smooth" }}
     >
       <body className={JakartaPlus.className}>
+        <Analytics />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
