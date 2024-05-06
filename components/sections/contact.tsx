@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Contact = ({ id }: { id: string }) => {
   return (
-    <section className="max-container padding-container my-20">
+    <section id={id} className="max-container padding-container my-20">
       <div className="relative flex w-full items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-tr from-blue-700 to-sky-500 p-10">
         <Image
           src={"/images/contactimage.png"}
